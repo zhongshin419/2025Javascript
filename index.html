@@ -1,84 +1,84 @@
-<!DOCTYPE html>
-<html lang="zh-TW"> <!-- 文件類型聲明，語言設為繁體中文 -->
+    <!DOCTYPE html>
+    <html lang="zh-TW"> <!-- 文件類型聲明，語言設為繁體中文 -->
 
-<head>
-    <meta charset="UTF-8"> <!-- 字元編碼設定為 UTF-8，支援中文顯示 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 響應式設計：讓網頁在手機、平板、電腦上都能正確顯示 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 字元編碼設定為 UTF-8，支援中文顯示 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 響應式設計：讓網頁在手機、平板、電腦上都能正確顯示 -->
 
-    <title>Javascript程式設計 - 作業製作4</title> <!-- 顯示在瀏覽器分頁的標題 -->
+        <title>Javascript程式設計 - 作業製作4</title> <!-- 顯示在瀏覽器分頁的標題 -->
 
-    <!-- 引入 Google 字體：Noto Sans TC，適合中文 -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <!-- 引入 Google 字體：Noto Sans TC，適合中文 -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
-    <style>
-        /* 頁面整體設定 */
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #e3f2fd, #bbdefb); /* 淺藍漸層背景 */
-            color: #0d47a1;  /* 深藍文字 */
-            text-align: center;
-        }
+        <style>
+            /* 頁面整體設定 */
+            body {
+                font-family: 'Noto Sans TC', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right, #e3f2fd, #bbdefb); /* 淺藍漸層背景 */
+                color: #0d47a1;  /* 深藍文字 */
+                text-align: center;
+            }
 
-        /* 頁面標題 h1 樣式 */
-        h1 {
-            background-color: #1565c0; /* 藍色背景 */
-            margin: 0;
-            padding: 30px 0;
-            font-size: 28px;
-            color: #e3f2fd; /* 淺藍字體 */
-            letter-spacing: 1px;
-        }
+            /* 頁面標題 h1 樣式 */
+            h1 {
+                background-color: #1565c0; /* 藍色背景 */
+                margin: 0;
+                padding: 30px 0;
+                font-size: 28px;
+                color: #e3f2fd; /* 淺藍字體 */
+                letter-spacing: 1px;
+            }
 
-        /* 副標題 h2 樣式 */
-        h2 {
-            margin-top: 30px;
-            font-size: 24px;
-            color: #1976d2; /* 較亮藍色 */
-        }
+            /* 副標題 h2 樣式 */
+            h2 {
+                margin-top: 30px;
+                font-size: 24px;
+                color: #1976d2; /* 較亮藍色 */
+            }
 
-        /* 導覽列外層容器 */
-        .nav {
-            margin: 30px auto;
-        }
+            /* 導覽列外層容器 */
+            .nav {
+                margin: 30px auto;
+            }
 
-        /* 導覽列中每個超連結樣式 */
-        .nav a {
-            color: white;
-            background-color: #2196f3;  /* 中藍 */
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            margin: 10px;
-            border: 2px solid #bbdefb;
-            display: inline-block;
-            font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s;
-        }
+            /* 導覽列中每個超連結樣式 */
+            .nav a {
+                color: white;
+                background-color: #2196f3;  /* 中藍 */
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin: 10px;
+                border: 2px solid #bbdefb;
+                display: inline-block;
+                font-weight: bold;
+                transition: background-color 0.3s ease, transform 0.2s;
+            }
 
-        /* 滑鼠懸停樣式 */
-        .nav a:hover {
-            background-color: #64b5f6; /* 淺藍 */
-            transform: scale(1.05);
-        }
-    </style>
-</head>
+            /* 滑鼠懸停樣式 */
+            .nav a:hover {
+                background-color: #64b5f6; /* 淺藍 */
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
 
-<body>
-    <!-- 頁面主標題 -->
-    <h1>103 下學期 五專三年級<br>Javascript 程式設計課程</h1>
+    <body>
+        <!-- 頁面主標題 -->
+        <h1>113 下學期 五專三年級<br>Javascript 程式設計課程</h1>
 
-    <!-- 副標題 -->
-    <h2>歡迎參訪鐘茂軒的個人網頁</h2>
+        <!-- 副標題 -->
+        <h2>歡迎參訪鐘茂軒的個人網頁</h2>
 
-    <!-- 導覽列 -->
-    <div class="nav">
-        <a href="index.html">首頁</a>
-        <a href="about.html">自我介紹</a>
-        <a href="dream.html">夢想</a>
-        <a href="homework.html">作業</a>
-    </div>
-</body>
-</html>
+        <!-- 導覽列 -->
+        <div class="nav">
+            <a href="index.html">首頁</a>
+            <a href="about.html">自我介紹</a>
+            <a href="dream.html">夢想</a>
+            <a href="homework.html">作業</a>
+        </div>
+    </body>
+    </html>
