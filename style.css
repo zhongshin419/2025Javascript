@@ -1,0 +1,50 @@
+body {
+                font-family: 'Noto Sans TC', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right, #e3f2fd, #bbdefb); /* 淺藍漸層背景 */
+                color: #0d47a1;  /* 深藍文字 */
+                text-align: center;
+            }
+
+            /* 頁面標題 h1 樣式 */
+            h1 {
+                background-color: #1565c0; /* 藍色背景 */
+                margin: 0;
+                padding: 30px 0;
+                font-size: 28px;
+                color: #e3f2fd; /* 淺藍字體 */
+                letter-spacing: 1px;
+            }
+
+            /* 副標題 h2 樣式 */
+            h2 {
+                margin-top: 30px;
+                font-size: 24px;
+                color: #1976d2; /* 較亮藍色 */
+            }
+
+            /* 導覽列外層容器 */
+            .nav {
+                margin: 30px auto;
+            }
+
+            /* 導覽列中每個超連結樣式 */
+            .nav a {
+                color: white;
+                background-color: #2196f3;  /* 中藍 */
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 8px;
+                margin: 10px;
+                border: 2px solid #bbdefb;
+                display: inline-block;
+                font-weight: bold;
+                transition: background-color 0.3s ease, transform 0.2s;
+            }
+
+            /* 滑鼠懸停樣式 */
+            .nav a:hover {
+                background-color: #64b5f6; /* 淺藍 */
+                transform: scale(1.05);
+            }
