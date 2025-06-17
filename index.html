@@ -1,69 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW"> <!-- 文件類型聲明，語言設為繁體中文 -->
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- 字元編碼設定為 UTF-8，支援中文顯示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript程式設計 - 作業製作4</title>
+    <!-- 響應式設計：讓網頁在手機、平板、電腦上都能正確顯示 -->
+
+    <title>Javascript程式設計 - 作業製作4</title> <!-- 顯示在瀏覽器分頁的標題 -->
+
+    <!-- 引入 Google 字體：Noto Sans TC，適合中文 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
     <style>
+        /* 頁面整體設定 */
         body {
-            font-family: 'Noto Sans TC', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #2e003e;
-            color: #fdfdfd;
-            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif; /* 使用 Google 字體 */
+            margin: 0;              /* 移除瀏覽器預設外距 */
+            padding: 0;             /* 移除預設內距 */
+            background-color: #2e003e; /* 深紫色背景 */
+            color: #fdfdfd;         /* 預設文字顏色為白色 */
+            text-align: center;     /* 文字置中 */
         }
 
+        /* 頁面標題 h1 樣式 */
         h1 {
-            background-color: #4a0072;
+            background-color: #4a0072; /* 標題背景為紫色 */
             margin: 0;
-            padding: 30px 0;
-            font-size: 28px;
-            color: #ffeb3b;
-            letter-spacing: 1px;
+            padding: 30px 0;           /* 上下內距 */
+            font-size: 28px;           /* 字體大小 */
+            color: #ffeb3b;            /* 亮黃色字體 */
+            letter-spacing: 1px;       /* 字母間距 */
         }
 
+        /* 副標題 h2 樣式 */
         h2 {
             margin-top: 30px;
             font-size: 24px;
-            color: #fff176;
+            color: #fff176; /* 淡黃色 */
         }
 
+        /* 導覽列外層容器 */
         .nav {
-            margin: 30px auto;
+            margin: 30px auto; /* 垂直距離與水平置中 */
         }
 
+        /* 導覽列中每個超連結樣式 */
         .nav a {
-            color: #fff;
-            background-color: #ff9800;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            margin: 10px;
-            border: 2px solid #fff3e0;
-            display: inline-block;
-            font-weight: bold;
+            color: #fff;                /* 白色文字 */
+            background-color: #ff9800;  /* 橘色背景 */
+            text-decoration: none;      /* 移除底線 */
+            padding: 12px 20px;         /* 內距設定 */
+            border-radius: 8px;         /* 圓角邊框 */
+            margin: 10px;               /* 外距設定 */
+            border: 2px solid #fff3e0;  /* 白橘色邊框 */
+            display: inline-block;      /* 行內區塊元素 */
+            font-weight: bold;          /* 粗體 */
             transition: background-color 0.3s ease, transform 0.2s;
+            /* 滑鼠懸停動畫：背景與縮放效果 */
         }
 
+        /* 滑鼠懸停時的樣式變化 */
         .nav a:hover {
-            background-color: #ffc107;
-            transform: scale(1.05);
+            background-color: #ffc107; /* 淺黃色背景 */
+            transform: scale(1.05);    /* 放大效果 */
         }
     </style>
 </head>
-<body>
 
+<body>
+    <!-- 頁面主標題，顯示課程名稱 -->
     <h1>103 下學期 五專三年級<br>Javascript 程式設計課程</h1>
+
+    <!-- 副標題，歡迎詞 -->
     <h2>歡迎參訪鐘茂軒的個人網頁</h2>
 
+    <!-- 導覽列，提供連結到其他頁面 -->
     <div class="nav">
         <a href="index.html">首頁</a>
         <a href="about.html">自我介紹</a>
-        <a href="research.html">研究</a>
+        <a href="dream.html">研究</a>
         <a href="homework.html">作業</a>
     </div>
-
 </body>
 </html>

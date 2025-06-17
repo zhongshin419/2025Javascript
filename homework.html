@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW"> <!-- 指定語言為繁體中文 -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- 使用 UTF-8 編碼 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript 作業</title>
+    <!-- 設定響應式視窗大小，適應手機、平板與電腦顯示 -->
+    
+    <title>Javascript 作業</title> <!-- 頁面標題 -->
+
+    <!-- 引入 Google 字體：Noto Sans TC 適合中文 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
     <style>
+        /* 整體網頁樣式設定 */
         body {
             font-family: 'Noto Sans TC', sans-serif;
-            background: linear-gradient(to right, #f2f9ff, #e0f7fa);
+            background: linear-gradient(to right, #f2f9ff, #e0f7fa); /* 漸層背景 */
             color: #333;
             margin: 0;
             padding: 0;
         }
 
+        /* 導覽列樣式 */
         .nav {
             text-align: center;
             margin: 30px 0 20px;
@@ -22,7 +29,7 @@
 
         .nav a {
             color: white;
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* 綠色按鈕 */
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 8px;
@@ -31,15 +38,17 @@
         }
 
         .nav a:hover {
-            background-color: #45a049;
+            background-color: #45a049; /* 懸停變色 */
         }
 
+        /* 主標題樣式 */
         h1 {
             text-align: center;
-            color: #2e7d32;
+            color: #2e7d32; /* 深綠色 */
             margin-bottom: 10px;
         }
 
+        /* 輸入區塊樣式 */
         .input-section {
             text-align: center;
             margin-bottom: 30px;
@@ -54,7 +63,7 @@
 
         input[type="button"] {
             padding: 8px 16px;
-            background-color: #2196F3;
+            background-color: #2196F3; /* 藍色按鈕 */
             color: white;
             border: none;
             border-radius: 5px;
@@ -65,17 +74,19 @@
             background-color: #1976D2;
         }
 
+        /* 用來顯示乘法表的容器 */
         div#myId {
             width: fit-content;
             background-color: #fff3e0;
             padding: 20px;
             margin: 0 auto;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
         }
 
+        /* 表格樣式 */
         table {
-            border-collapse: collapse;
+            border-collapse: collapse; /* 合併邊框 */
             margin: 0 auto;
         }
 
@@ -86,48 +97,58 @@
             background-color: #fbe9e7;
         }
     </style>
+
+    <!-- JavaScript 區塊：功能邏輯 -->
     <script>
         function myFunction() {
-            var n = document.getElementById('numberInput').value;
+            var n = document.getElementById('numberInput').value; // 取得輸入值
 
+            // 檢查輸入是否合法
             if (n === "" || isNaN(n) || n <= 0) {
                 alert("請輸入大於 0 的有效數字");
                 return;
             }
 
-            alert("輸入的數值是: " + n);
-            var str = "<table>";
+            alert("輸入的數值是: " + n); // 顯示提示視窗
+
+            var str = "<table>"; // 開始建立表格字串
 
             for (var i = 1; i <= n; i++) {
-                str += "<tr>";
+                str += "<tr>"; // 建立新列
                 for (var j = 1; j <= n; j++) {
-                    str += `<td>${i} × ${j} = ${i * j}</td>`;
+                    str += `<td>${i} × ${j} = ${i * j}</td>`; // 每個格子顯示乘法式
                 }
                 str += "</tr>";
             }
-            str += "</table>";
 
+            str += "</table>"; // 結束表格
+
+            // 將表格顯示在指定區域
             document.getElementById('myId').innerHTML = str;
         }
     </script>
 </head>
 
 <body>
+    <!-- 導覽列 -->
     <div class="nav">
         <a href="index.html">首頁</a>
         <a href="about.html">自我介紹</a>
-        <a href="research.html">研究</a>
+        <a href="dream.html">研究</a>
         <a href="homework.html">作業</a>
     </div>
 
+    <!-- 頁面標題 -->
     <h1>N × N 乘法表</h1>
 
+    <!-- 使用者輸入區 -->
     <div class="input-section">
         <label for="numberInput">請輸入數字:</label>
         <input type="number" id="numberInput" placeholder="請輸入數字" min="1" />
         <input type="button" value="生成表格" title="OK" onclick="myFunction()" />
     </div>
 
+    <!-- 顯示表格的區塊 -->
     <div id="myId"></div>
 </body>
 
