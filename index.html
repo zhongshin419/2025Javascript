@@ -14,71 +14,70 @@
     <style>
         /* 頁面整體設定 */
         body {
-            font-family: 'Noto Sans TC', sans-serif; /* 使用 Google 字體 */
-            margin: 0;              /* 移除瀏覽器預設外距 */
-            padding: 0;             /* 移除預設內距 */
-            background-color: #2e003e; /* 深紫色背景 */
-            color: #fdfdfd;         /* 預設文字顏色為白色 */
-            text-align: center;     /* 文字置中 */
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb); /* 淺藍漸層背景 */
+            color: #0d47a1;  /* 深藍文字 */
+            text-align: center;
         }
 
         /* 頁面標題 h1 樣式 */
         h1 {
-            background-color: #4a0072; /* 標題背景為紫色 */
+            background-color: #1565c0; /* 藍色背景 */
             margin: 0;
-            padding: 30px 0;           /* 上下內距 */
-            font-size: 28px;           /* 字體大小 */
-            color: #ffeb3b;            /* 亮黃色字體 */
-            letter-spacing: 1px;       /* 字母間距 */
+            padding: 30px 0;
+            font-size: 28px;
+            color: #e3f2fd; /* 淺藍字體 */
+            letter-spacing: 1px;
         }
 
         /* 副標題 h2 樣式 */
         h2 {
             margin-top: 30px;
             font-size: 24px;
-            color: #fff176; /* 淡黃色 */
+            color: #1976d2; /* 較亮藍色 */
         }
 
         /* 導覽列外層容器 */
         .nav {
-            margin: 30px auto; /* 垂直距離與水平置中 */
+            margin: 30px auto;
         }
 
         /* 導覽列中每個超連結樣式 */
         .nav a {
-            color: #fff;                /* 白色文字 */
-            background-color: #ff9800;  /* 橘色背景 */
-            text-decoration: none;      /* 移除底線 */
-            padding: 12px 20px;         /* 內距設定 */
-            border-radius: 8px;         /* 圓角邊框 */
-            margin: 10px;               /* 外距設定 */
-            border: 2px solid #fff3e0;  /* 白橘色邊框 */
-            display: inline-block;      /* 行內區塊元素 */
-            font-weight: bold;          /* 粗體 */
+            color: white;
+            background-color: #2196f3;  /* 中藍 */
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 10px;
+            border: 2px solid #bbdefb;
+            display: inline-block;
+            font-weight: bold;
             transition: background-color 0.3s ease, transform 0.2s;
-            /* 滑鼠懸停動畫：背景與縮放效果 */
         }
 
-        /* 滑鼠懸停時的樣式變化 */
+        /* 滑鼠懸停樣式 */
         .nav a:hover {
-            background-color: #ffc107; /* 淺黃色背景 */
-            transform: scale(1.05);    /* 放大效果 */
+            background-color: #64b5f6; /* 淺藍 */
+            transform: scale(1.05);
         }
     </style>
 </head>
 
 <body>
-    <!-- 頁面主標題，顯示課程名稱 -->
+    <!-- 頁面主標題 -->
     <h1>103 下學期 五專三年級<br>Javascript 程式設計課程</h1>
 
-    <!-- 副標題，歡迎詞 -->
+    <!-- 副標題 -->
     <h2>歡迎參訪鐘茂軒的個人網頁</h2>
 
-    <!-- 導覽列，提供連結到其他頁面 -->
+    <!-- 導覽列 -->
     <div class="nav">
         <a href="index.html">首頁</a>
         <a href="about.html">自我介紹</a>
-        <a href="dream.html">研究</a>
+        <a href="dream.html">夢想</a>
         <a href="homework.html">作業</a>
     </div>
 </body>

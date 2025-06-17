@@ -1,70 +1,127 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- 頁面語言設定為英文 -->
+<html lang="zh-TW"> <!-- 指定語言為繁體中文 -->
 
 <head>
-    <meta charset="UTF-8"> <!-- 編碼設定為 UTF-8，支援多語系 -->
+    <meta charset="UTF-8"> <!-- 使用 UTF-8 編碼 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 響應式設計設定，適合手機或平板顯示 -->
-    
-    <title>My介紹</title> <!-- 瀏覽器標籤上顯示的標題 -->
+    <title>關於我 - 鐘茂軒</title>
+
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
     <style>
-        /* 頁面背景顏色設定 */
         body {
-            background-color: lightgrey;
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fff8f0, #ffe0dc); /* 柔和粉橘漸層背景 */
+            color: #333;
         }
 
-        /* 表格設定：邊框顏色為粉紅色、合併線框 */
+        /* 導覽列樣式 */
+        .nav {
+            text-align: center;
+            background-color: #ffccbc; /* 同色系橘粉背景 */
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav a {
+            color: #4e342e;
+            background-color: #ffe0b2;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #ffcc80;
+        }
+
+        h3, h4 {
+            text-align: center;
+            color: #6d4c41;
+            margin-top: 30px;
+        }
+
+        /* 表格樣式 */
         table {
-            border: 1px solid pink;
+            border: 1px solid #f8bbd0;
             border-collapse: collapse;
+            background-color: #fffaf0;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         }
 
-        /* 表格儲存格間距設定 */
         td {
-            margin: 10px;
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        ul {
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 學歷區塊 */
+        .education {
+            max-width: 600px;
+            margin: 0 auto 50px;
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
     </style>
-</head> <!-- <head> 區塊正確結束 -->
+</head>
 
 <body>
-    <!-- 導覽列：連結到其他頁面 -->
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我</a>
-    <a href="dream.html">研究</a>
-    <a href="homework.html">作業</a>
+    <!-- 導覽列 -->
+    <div class="nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="dream.html">夢想</a>
+        <a href="homework.html">作業</a>
+    </div>
 
-    <!-- 標題 -->
+    <!-- 個人介紹標題 -->
     <h3>鐘茂軒的個人介紹</h3>
 
-    <!-- 使用表格排列：左邊為文字，右邊為圖片 -->
+    <!-- 表格：左欄文字，右欄圖片 -->
     <table>
         <tr>
             <td width="300px">
-                <!-- 個人資訊列成清單 -->
                 <ul>
                     <li>姓名：鐘茂軒</li>
                     <li>學號：5b1g0015</li>
                     <li>年齡：18歲</li>
                     <li>科系：資訊工程科</li>
                     <li>興趣：網頁開發、廚藝、閱讀</li>
-                    <li>目標：之後會想要試著去修社工相關學分，參與社會運動促進社會發展。</li>
+                    <li>目標：希望修習社工相關學分，參與社會運動，促進社會發展。</li>
                 </ul>
             </td>
             <td width="200px">
-                <!-- 顯示個人照片 -->
-                <img src="img/myself.jpg" alt="帽子" width="200px" />
+                <img src="img/myself.jpg" alt="我的照片" width="200px">
             </td>
         </tr>
     </table>
 
-    <!-- 學歷標題 -->
-    <h4>學歷</h4>
-    <!-- 學歷列表 -->
-    <ul>
-        <li>國中：彰化縣溪州國中</li>
-        <li>五專：台南市立南台科技大學</li>
-    </ul>
+    <!-- 學歷區塊 -->
+    <div class="education">
+        <h4>學歷</h4>
+        <ul>
+            <li>國中：彰化縣溪州國中</li>
+            <li>五專：台南市立南台科技大學</li>
+        </ul>
+    </div>
 </body>
 
 </html>

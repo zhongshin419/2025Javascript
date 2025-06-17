@@ -9,53 +9,64 @@
     <title>夢想主題</title> <!-- 頁面標題 -->
 
     <style>
-        /* CSS 區塊，用來設計網頁樣式 */
-
-        div#myresearch {
-            width: 50%; /* 寬度為畫面的一半 */
-            background-color: lavenderblush; /* 淡粉紫背景色 */
-            padding: 30px; /* 內邊距 */
-            margin: 0 auto; /* 左右置中 */
-            border-radius: 12px; /* 邊角圓弧效果 */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* 加點陰影效果 */
-        }
-
+        /* 網頁整體設定 */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fefefe; /* 整體背景色 */
-            color: #333;
+            background-color: #fff8e1; /* 柔和淺米黃色背景 */
+            color: #5d4037; /* 深棕色文字 */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* 文字置中 */
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+            height: 100vh; /* 讓頁面佔滿整個視窗高度 */
         }
 
+        /* 主內容區塊樣式 */
+        div#myresearch {
+            width: 50%; /* 宽度占50% */
+            background-color: #fff3e0; /* 溫暖的米橘色 */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(255, 183, 77, 0.3); /* 橘色系陰影 */
+        }
+
+        /* 導覽列連結樣式 */
         a {
             margin: 10px;
-            padding: 8px 12px;
-            background-color: lightblue;
-            color: darkblue;
+            padding: 10px 16px;
+            background-color: #ffcc80; /* 橘黃色背景 */
+            color: #6d4c41; /* 深棕文字 */
             text-decoration: none;
             border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
+        /* 滑鼠懸停效果 */
         a:hover {
-            background-color: deepskyblue;
+            background-color: #ffa726; /* 更亮的橘色 */
             color: white;
+        }
+
+        /* 標題樣式 */
+        h3 {
+            color: #e65100; /* 深橘色標題 */
         }
     </style>
 </head>
 
 <body>
-    <!-- 網頁內容區域開始 -->
-
     <!-- 導覽列 -->
     <a href="index.html">首頁</a>
     <a href="about.html">關於我</a>
-    <a href="research.html">夢想</a>
+    <a href="dream.html">夢想</a>
     <a href="homework.html">作業</a>
 
     <!-- 主題內容區塊 -->
     <div id="myresearch">
-        <h3>我的夢想清單</h3> <!-- 主標題 -->
-
-        <!-- 有序清單：列出夢想 -->
+        <h3>我的夢想清單</h3>
         <ol>
             <li>在家中成為一位善良又不雞婆的人</li>
             <li>出國旅遊並探索不同文化</li>
@@ -65,8 +76,6 @@
             <li>過上平和且有趣的人生</li>
         </ol>
     </div>
-
-    <!-- 網頁內容區域結束 -->
 </body>
 
 </html>
