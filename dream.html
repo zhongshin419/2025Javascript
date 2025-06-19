@@ -18,7 +18,6 @@
             padding: 0;
             text-align: center; /* 文字置中 */
             display: flex;
-            justify-content: center; /* 水平置中 */
             align-items: center; /* 垂直置中 */
             height: 100vh; /* 讓頁面佔滿整個視窗高度 */
         }
@@ -53,11 +52,46 @@
         /* 標題樣式 */
         h3 {
             color: #e65100; /* 深橘色標題 */
+            text-align: center;
+            margin-top: 0;
+            padding-top: 20px;
+        }
+
+        /* 輸入視窗樣式 */
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* 按鈕樣式 */
+        button {
+            background-color: #ff9800; /* 橙色背景 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e68900; /* 深橙色 */
         }
     </style>
 </head>
 
 <body>
+    <h3>我的夢想清單</h3>
     <!-- 導覽列 -->
     <a href="index.html">首頁</a>
     <a href="about.html">關於我</a>
@@ -66,8 +100,8 @@
 
     <!-- 主題內容區塊 -->
     <div id="myresearch">
-        <h3>我的夢想清單</h3>
         <ol>
+            <li>目標</li>
             <li>在家中成為一位善良又不雞婆的人</li>
             <li>出國旅遊並探索不同文化</li>
             <li>發表自己的創意作品，做更多藝術創作</li>
@@ -76,6 +110,19 @@
             <li>過上平和且有趣的人生</li>
         </ol>
     </div>
+
+    <div style="margin-top: 20px;">
+        <ol>
+            <li>心得</li>
+            <li>在這一個過程，因為自己的懶散都沒有來上課</li>
+            <li>但我之後會努力一點的 </li>
+            <li>希望能夠在未來的課程中學到更多知識</li>
+
+        </ol>
+    </div>
+
+    <footer>
+        <p>© 2023 鐘茂軒的個人網頁</p>
 </body>
 
 </html>
